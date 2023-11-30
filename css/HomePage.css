@@ -1,0 +1,375 @@
+/* Animation */
+
+.image-preview img {
+    transition: transform 2s ease-in-out;
+  }
+
+  .image-preview img:hover {
+    transform: scale(1.2);
+  }
+
+  .container-preview {
+    position: relative;
+    animation: parallax 2s ease-in-out infinite;
+  }
+
+  @keyframes parallax {
+    0% {
+      bottom: 650px;
+    }
+    50% {
+      bottom: 700px;
+    }
+    100% {
+      bottom: 650px;
+    }
+  }
+
+  .button-discover-1 {
+    transition: all 0.5s ease-in-out;
+  }
+
+  .button-discover-1:hover {
+    background-color: #ff00ff;
+    color: white;
+    border-radius: 50%;
+  }
+
+  .button-discover-2 {
+    transition: all 0.5s ease-in-out;
+  }
+
+  .button-discover-2:hover {
+    background-color: #ff00ff;
+    color: white;
+    border-radius: 50%;
+  }
+
+
+
+* {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+body {
+    background-color: white;
+    background-color: rgb(36, 0, 36);
+    box-sizing: border-box;
+    animation: background-color-change 10s ease infinite;
+}
+@keyframes background-color-change {
+      0% {
+        background-color: #390055;
+      }
+      50% {
+        background-color: #002831;
+      }
+      100% {
+        background-color: #390055;
+      }
+}
+
+  .navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: linear-gradient(to right, #390055, #002831);
+    width: 100%;
+    height: 65px;
+    top: 0;
+    z-index: 9;
+
+    animation: navbar-slide-in 1s ease-in-out forwards;
+}
+
+    @keyframes navbar-slide-in {
+      from {
+        top: -100px;
+      }
+      to {
+        top: 0;
+      }
+  }
+  .navbar p {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    text-shadow: 2px 3px 5px darkmagenta;
+    margin-left: 30px;
+
+    animation: pulsate 2s ease-in-out infinite;
+}
+
+@keyframes pulsate {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+  }
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;
+    font-size: 1.6em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: left;
+
+    animation: text-glow 2s ease-in-out infinite;
+}
+
+@keyframes text-glow {
+      0% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: 0 5px 15px white;
+      }
+      100% {
+        text-shadow: none;
+      }
+  }
+
+  /* Mengatur gaya link navbar */
+  .navbar a:hover {
+    color: #ccc;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 3px;
+  }
+
+  /* Gambar awal */
+  .image-preview {
+    max-width: 1900px;
+    margin: 15px auto;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .image-preview img {
+    width: 100%;
+    height: fit-content;
+  }
+  .container-preview {
+    width: 50%;
+    position: relative;
+    bottom: 650px;
+    left: 450px;
+
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+
+    border: 3px solid white;
+  }
+  .container-preview p {
+    font-size: 0.6em;
+    margin: 10px 10px;
+    padding: 10px;
+    letter-spacing: 5px;
+  }
+  header {
+    margin-bottom: 0;
+  }
+
+  section {
+    max-width: 1900px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  section img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  /* Gambar What is ML */
+  .judul-1 {
+    position: relative;
+    bottom: 650px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7em;
+    font-weight: bold;
+    text-align: center;
+  }
+  .ungu {
+    color: #952bff;
+  }
+
+  .button-discover-1 {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 100px;
+    width: fit-content;
+    height: fit-content;
+    padding: 25px 45px;
+    margin: 65px auto 0;
+    background-image: linear-gradient(to right, #8000ff, #fa00ff);
+  }
+  .button-discover-1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.5em;
+    font-weight: lighter;
+  }
+  .button-discover-1:hover {
+    box-shadow: 2px 3px 15px white;
+  }
+
+  /* Gambar about Fanny */
+  .judul-2 {
+    width: fit-content;
+    margin: 0 80px;
+
+    position: relative;
+    bottom: 650px;
+
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 6em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .button-discover-2 {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 100px;
+    width: fit-content;
+    height: fit-content;
+    padding: 25px 45px;
+    margin: 65px auto 0;
+    background-image: linear-gradient(to right, #8000ff, #fa00ff);
+  }
+
+  .button-discover-2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.5em;
+    font-weight: lighter;
+  }
+  .button-discover-2:hover {
+    box-shadow: 2px 3px 15px white;
+  }
+
+  /* The Gameplay */
+  .judul-3 {
+    width: fit-content;
+    margin: 0 80px;
+
+    position: relative;
+    bottom: 650px;
+
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .teks-kecil {
+    font-size: 3em;
+    letter-spacing: 15px;
+    word-spacing: 20px;
+    margin-bottom: 25px;
+  }
+  .teks-besar {
+    font-size: 8em;
+  }
+
+  /* Karakter */
+  .container-character {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  .teks {
+    width: 100%;
+    position: relative;
+    bottom: 140px;
+
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    padding: 40px 0;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-image: linear-gradient(grey, black);
+    cursor: pointer;
+  }
+  .k-1 {
+    display: inline-block;
+    width: 30%;
+    margin: 0 25px;
+  }
+  .k-1 img {
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+  .k-2 {
+    display: inline-block;
+    width: 30%;
+    margin: 0 25px;
+  }
+  .k-2 img {
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+  .k-3 {
+    display: inline-block;
+    width: 30%;
+    margin: 0 25px;
+  }
+  .k-3 img {
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+  .character {
+    opacity: 0.5;
+  }
+  .character:hover {
+    opacity: 1;
+  }
+
+  /* Footer */
+  footer {
+    width: 100%;
+    background-image: linear-gradient(rgb(36, 0, 36), #002831);
+    text-align: center;
+  }
+  footer p {
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 5px 7px #fa00ff;
+    padding: 25px;
+  }
+
+  footer ul li {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  footer img {
+    width: 100px;
+    border-radius: 100%;
+  }
+  footer img:hover {
+    box-shadow: 2px 3px 3px;
+  }

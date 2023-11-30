@@ -1,0 +1,244 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(36, 0, 36);
+    animation: background-color-change 10s ease infinite;
+}
+@keyframes background-color-change {
+      0% {
+        background-color: #390055;
+      }
+      50% {
+        background-color: #002831;
+      }
+      100% {
+        background-color: #390055;
+      }
+}
+.navbar{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: linear-gradient(to right,#390055, #002831);
+    width: 100%;
+    height: 65px;
+    top: 0;
+    z-index: 9;
+    animation: navbar-slide-in 1s ease-in-out forwards;
+}
+
+    @keyframes navbar-slide-in {
+      from {
+        top: -100px;
+      }
+      to {
+        top: 0;
+      }
+}
+.navbar p{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    text-shadow: 2px 3px 5px darkmagenta;
+    margin-left: 30px;
+
+    animation: pulsate 2s ease-in-out infinite;
+}
+
+@keyframes pulsate {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;
+    font-size: 1.6em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: left;
+
+    animation: text-glow 2s ease-in-out infinite;
+}
+
+@keyframes text-glow {
+      0% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: 0 5px 15px white;
+      }
+      100% {
+        text-shadow: none;
+      }
+}
+
+/* Mengatur gaya link navbar */
+.navbar a:hover {
+    color: #ccc;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 3px;
+}
+
+
+h2, h3 {
+    margin: 20px 0;
+    padding: 0;
+    color: #333;
+    text-transform: uppercase;
+}
+.school-name{
+    text-transform: capitalize;
+}
+   
+   
+h1 strong, h2 strong, h3 strong {
+    color: #666;
+}
+   
+
+section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffffc5;
+    box-shadow: 0 3px 15px #FA00FF;
+}
+#about{
+    margin-top: 25px;
+}
+.float-left{
+    float: left;
+    margin: 0 auto;
+}
+.float-left p{
+    margin: 5% 0;
+    width: 60%;
+    display: inline-block;
+
+}
+section img{
+    float: left;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: 2px 3px 2px grey;
+    margin: 10px 15px 25px;
+}
+section p{
+    text-align: justify;
+}
+section p, section ul, section form {
+    margin: 20px 0;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+section ul li {
+    padding: 5px 0;
+    color: #666;
+}
+
+section .education {
+    margin-bottom: 20px;
+}
+
+.contact-info{
+    width: 100%;
+    text-align: center;
+    color: blue;
+}
+.contact-info span{
+    color: black;
+}
+.contact-info a{
+    text-decoration: none;
+}
+
+/* Mengatur gaya form kontak */
+.kotak-luar{
+    border: 1px solid;
+    border-radius: 10px;
+
+    float: right;
+    width: 350px;
+    height: fit-content;
+    background-color: #333;
+}
+.kotak-dalam{
+    border: 1px solid;
+    border-radius: 10px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+}
+.kotak-dalam p{
+    width: 100%;
+    display: inline-block;
+    font-size: smaller;
+    margin: 0;
+    text-align: center;
+    color: black;
+}
+.teks-1{
+    width: 332px;
+}
+.teks-2{
+    width: 262px;
+}
+.teks-3{
+    width: 192px;
+}
+.teks-4{
+    width: 157px;
+}
+
+
+
+/* Footer */
+footer{
+    position: relative;
+    top: 30px;
+    width: 100%;
+    background-image: linear-gradient(rgb(36, 0, 36), #002831);
+    text-align: center;
+    bottom: 0;
+}
+footer p{
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 5px 7px #FA00FF;
+    padding-top: 25px;
+    margin-bottom: 0;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 0 auto;
+}
+footer img{
+    width: 60px;
+    border-radius: 100%;
+}
+footer img:hover{
+    box-shadow: 2px 3px 3px;
+}
